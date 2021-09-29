@@ -1,0 +1,6 @@
+<app-hero-form
+ [vm]="vm$ | async"
+ [selectedUi]="selectedUi$  | async"
+ (cancel)="close()"
+ (save)="save($event)"
+ (selectUiChanged)="updateSelectedUi($event)">
